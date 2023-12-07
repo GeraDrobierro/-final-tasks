@@ -1,15 +1,9 @@
-using System;
-
-class Program
+int limit(int m,int n)
 {
-    static void Main(string[] args)
-    {
-        int M = int.Parse(Console.ReadLine());
-        int N = int.Parse(Console.ReadLine());
-        
-        for (int i = M; i <= N; i++)
-        {
-            Console.WriteLine(i);
-        }
-    }
+    if (m == n) return m;
+    return m+limit(m+1,n);
 }
+int m = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"{limit(m,n)}");
