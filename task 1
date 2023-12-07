@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int M = int.Parse(Console.ReadLine());
+        int N = int.Parse(Console.ReadLine());
+        
+        for (int i = M; i <= N; i++)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
